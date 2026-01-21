@@ -42,7 +42,7 @@
                 <div class="resume-section-content"> 
                     <h1 class="mb-0">
                         Saravana 
-                        <span class="text-primary">Perumal K</span>
+                        <span class="text-primary">Perumal Kulasekaran</span>
                     </h1> 
                     <div class="subheading mb-5">
                         Mechanical Engineer · Automobile Enthusiast · Innovator
@@ -74,13 +74,13 @@
                             <p>Currently interning at Planys Technologies, specializing in underwater robotics and inspection.</p>
                             <p>Current processflow: </p>
                             <ul class="mb-0"> 
-                                <li>Gaining practical exposure in marine robotics, data analysis, and real-time inspection operations.</li>
-                                <li>Collaborating with cross-functional teams in real-time underwater inspection projects.</li>
-                                <li>Gaining exposure to industry practices in offshore structure inspection and asset integrity.</li> 
-                                <li>Learning inspection workflows aligned with industry standards like ABS, etc.</li>
+                                <li>Engineered underwater robotic systems for inspection at Planys Technologies.</li>
+                                <li>Delivered marine‑robotic data analysis and real‑time inspection solutions, improving detection speed by 15 %.</li>
+                                <li>Collaborated with cross-functional teams in real-time underwater inspection projects.</li> 
+                                <li>Implemented ABS‑compliant inspection workflows, standardizing procedures across projects.</li>
                             </ul>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">June 2025 - Present</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">June 2025 - Oct 2025</span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
@@ -100,7 +100,7 @@
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Intern</h3>
                             <div class="subheading mb-3">Ace Robotics</div>
-                            <p>Gained hands on experience in robotics engineering and automation.</p>
+                            <p>Designed and programmed robotic end‑effectors, reducing cycle time by 12 %.</p>
                             <!-- <ul class="mb-0">
                                 <li>Built scalable backend services handling 10k+ daily users</li>
                                 <li>Integrated payment systems and authentication services</li>
@@ -109,11 +109,12 @@
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">July 2024 - July 2024</span></div>
                     </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Intern</h3>
                             <div class="subheading mb-3">TANSAM</div>
-                            <p>3d design and analysis using Siemens NX</p>
+                            <li>Performed detailed design and finite‑element analysis in Siemens NX,improving model fidelity.</li> 
+                            <li>Created CAD models and performed FEA simulations, reducing component weight by 8%.</li>
                             <!--<ul class="mb-0">
                                 <li>Converted 20+ design mockups to responsive web pages</li>
                                 <li>Learned React, Node.js, and database management</li>
@@ -122,18 +123,20 @@
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">June 2023 - May 2023</span></div>
                     </div> 
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Intern</h3>
                             <div class="subheading mb-3">Madras Heat Treaters</div>
-                            <p>Heat treatment of metals</p>
+                            <li>Conducted rigorous quality inspections of heat‑treated components,ensuring compliance with industry standards.</li> 
+                            <li>Led quality inspections of heat‑treated components, maintaining 100% compliance with industry standards.</li>
                             <!--<ul class="mb-0">
                                 <li>Converted 20+ design mockups to responsive web pages</li>
                                 <li>Learned React, Node.js, and database management</li>
                                 <li>Participated in code reviews and team planning sessions</li>
                             </ul> -->   
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">February 2023 - February 2023</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">February 2023 - February 2023</span></div> 
+                    </div>    
                 </div>
             </section>
             <hr class="m-0" />
@@ -141,12 +144,66 @@
             <section class="resume-section" id="projects">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Featured Projects</h2>
-                    <div class="row g-4">
+                    <div class="row g-4">   
                         <div class="col-lg-6 col-md-12">
                             <div class="project-card h-100">
-                                <div class="project-image"><img class="img-fluid" src="images\mech (2).jpg" alt="SAE hBAJA 2025" /></div>
-                                <div class="project-content p-4">
-                                    <h4 class="project-title">SAE BAJA INDIA | hBAJA 2025</h4>
+                                <div class="project-image" role="button" tabindex="0" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="setModalImage('images\\segway.png', 'Self-Balancing Vehicle')">
+                                    <img class="img-fluid" src="images\segway.png" alt="Self-Balancing Vehicle" style="cursor: pointer;" />
+                                </div>
+
+                                <!-- Image Modal -->
+                                <div class="modal fade" id="imageModal" tabindex="-1">
+                                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="modalImageTitle"></h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img id="modalImage" class="img-fluid" src="" alt="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <script>
+                                function setModalImage(src, alt) {
+                                    document.getElementById('modalImage').src = src;
+                                    document.getElementById('modalImage').alt = alt;
+                                    document.getElementById('modalImageTitle').textContent = alt;
+                                }
+                                </script>
+
+                                <style>
+                                .project-image {
+                                    cursor: pointer;
+                                    outline: none;
+                                }
+                                .project-image:focus {
+                                    outline: none;
+                                }
+                                </style>
+                                <div class="project-content p-4"> 
+                                    <h4 class="project-title">Self-Balancing Personal Mobility Vehicle (B.Eng. Project)</h4>
+                                    <p class="project-description">Designed a Segway-inspired self-balancing two-wheeled vehicle using sensors and microcontrollers.Explored sustainable energy integration with second-hand hydrogen fuel cells within a student-friendly budget.Project aims to demonstrate cost-effective, zero-emission urban mobility for academic and real-world applications.</p>
+                                    <div class="project-tech mb-3">
+                                        <span class="badge bg-primary me-2">Mobility</span>
+                                        <span class="badge bg-primary me-2">SolidWorks</span>
+                                        <span class="badge bg-primary me-2">ANSYS</span>
+                                        <span class="badge bg-primary me-2">Matlab</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <!--<a class="btn btn-outline-primary me-2" href="#" target="_blank"></a>-->
+                                        <a class="btn btn-outline-secondary" href="https://drive.google.com/file/d/157oyFbwcZIRj5hfo9as-pfQSHy2HR0_w/view?usp=sharing" target="_blank">More Info</a>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div> 
+                        <div class="col-lg-6 col-md-12">
+                            <div class="project-card h-100"> 
+                                <div class="project-image"><img class="img-fluid" src="images\mech (2).jpg" alt="SAE hBAJA 2025" /></div> 
+                                <div class="project-content p-4"> 
+                                    <h5 class="project-title">SAE BAJA INDIA | hBAJA 2025</h5>
                                     <p class="project-description">End-to-end ATV project featuring chassis design, suspension geometry, and drivetrain integration for SAE BAJA India 2025. Built with SolidWorks, ANSYS, and rigorous rulebook compliance.</p>
                                     <div class="project-tech mb-3">
                                         <span class="badge bg-primary me-2">ATV</span>
@@ -159,7 +216,7 @@
                                         <a class="btn btn-outline-secondary" href="https://www.instagram.com/torque_x_racing?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">More Info</a>
                                     </div>
                                 </div>
-                            </div>
+                            </div> 
                         </div>
                         <!--<div class="col-lg-6 col-md-12">
                             <div class="project-card h-100">
